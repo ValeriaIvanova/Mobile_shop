@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg"
+    tools:context=".Admin.AdminCategoryActivity">
+
+
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Выберите категорию"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"/>
+
+    <LinearLayout
+        android:id="@+id/first_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@id/slogan">
+
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/camera2"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_below="@id/first_line">
+
+        <ImageView
+            android:id="@+id/printer"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/printer"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_below="@id/second_line">
+
+        <ImageView
+            android:id="@+id/acces"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/accessory"
+            />
+    </LinearLayout>
+</RelativeLayout>

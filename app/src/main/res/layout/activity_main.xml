@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/origi"
+    tools:context=".Users.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="369dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="Лови момент здесь и сейчас"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="italic|bold"
+        />
+
+    <Button
+        android:id="@+id/main_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/button"
+        android:padding="20dp"
+        android:text="Уже есть аккаунт? Войти!"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        tools:ignore="SpeakableTextPresentCheck"
+        />
+
+
+    <Button
+        android:id="@+id/main_join_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_login_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_disign"
+        android:padding="20dp"
+        android:text="Регистрация"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        tools:ignore="SpeakableTextPresentCheck"
+        />
+
+</RelativeLayout>
